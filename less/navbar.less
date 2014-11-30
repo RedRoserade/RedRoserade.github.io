@@ -1,0 +1,46 @@
+#navbar {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid @header-border;
+    border-bottom: 1px solid @header-border;
+    background: @navbar-background;
+}
+
+.has-affixed-navbar {
+    padding-top: 60px;
+}
+
+#navbar.affixed {
+    margin-top: 0;
+    background: @dark-background;
+    box-shadow: 0 0 10px @navbar-shadow-color;
+}
+
+#navbar > a {
+    color: #f3f3f3;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0 solid @header-border;
+    transition: border-bottom-width 0.2s;
+}
+
+#navbar > a:hover {
+    background: @navbar-link-hover-background;
+    border-bottom-width: 2px;
+}
+
+#navbar > .active {
+    border-bottom-width: 4px;
+}
+
+.affixed {
+    position: fixed;
+    top: 0;
+
+    /*IE needs this to stop the element from going offscreen in the X axis.*/
+    left: 0;
+}

@@ -1,7 +1,8 @@
 <!doctype html>
 
 <!--
-    Looking at my code, huh?
+    Why not look at this on my github repository?
+    https://www.github.com/redroserade/redroserade.github.io
 -->
 
 <html lang="en">
@@ -9,13 +10,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    
+
     <title>
         André Carvalho (@redroserade)
     </title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-     <link href='http://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Slab' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -27,70 +28,83 @@
 
         <h1>André Carvalho</h1>
 
-        <p>Programmer. Petrolhead. Gamer. Music lover. In no particular order.</p>
-        
+        <p class="text-center">Programmer. Petrolhead. Gamer. Music lover. In no particular order.</p>
+
         <nav id="navbar" class="affix navbar-affix">
-            <a href="#about-me">
+            <a href="#about-me" data-toggle="tab">
                 About me
             </a>
-            <a href="#projects">
+            <a href="#projects" data-toggle="tab">
                 Things I've made
             </a>
-            <a href="#contact">
+            <a href="#contact" data-toggle="tab">
                 Get in touch
             </a>
-            <a href="/blog">
+            <!-- <a href="/blog">
                 Blog
-            </a>
+            </a> -->
         </nav>
     </header>
 
-
-
     <section id="main-content" class="container container-width">
-        <h2 id="about-me">About me</h2>
+        <section id="about-me" class="">
+            <h2 id="about-me">About me</h2>
 
-        <p>
-            <strong>Hello, world!</strong> It seems you have stumbled upon my corner on this series of tubes. I'm André, sometimes known as "redRoserade".
-        </p>
+            <p>
+                <strong>Hello, world!</strong> It seems you have stumbled upon my corner on this series of tubes. I'm André, sometimes known as "redRoserade".
+            </p>
 
-        <p>
-            I'm a guy who likes to make things, mostly web-based, but I'll happilly dabble around with .NET.
-        </p>
-        
-        <p>I am also a petrolhead. I am quite fond of the technical and aesthetical aspects of cars, and I love motor racing, especially Rally and Touring Car racing.</p>
+            <p>
+                I'm a guy who likes to make things, mostly web-based, but I'll happilly dabble around with other things.
+            </p>
 
-        <h2 id="projects">Things I've made</h2>
-        <div class="project">
-            <div class="project-description">
-                <h4>Portal of the Photographic Archive of Silva Magalhães</h4>
-                <p>A website dedicated to showcasing the contents of the Photographic Archive of Silva Magalhães. This project came to fruition through a partnership through the Polytechnic Institute of Tomar and the Council of Tomar.</p>
+            <p>I am also a petrolhead. I am quite fond of the technical and aesthetical aspects of cars, and I love motor racing, especially Rally and Touring Car racing.</p>
+        </section>
+
+        <section id="projects" class="">
+            <h2>Things I've made</h2>
+            <div class="project">
+                <div class="project-description">
+                    <h4>Portal of the Photographic Archive of Silva Magalhães</h4>
+                    <p>A website dedicated to showcasing the contents of the Photographic Archive of Silva Magalhães. This project came to fruition through a partnership through the Polytechnic Institute of Tomar and the Council of Tomar.</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="project">
-            <div class="project-description">
-                <h4>"Letrinhas"</h4>
-                
-                <p>An Android application for young students to help them improve their reading skills in a fun way. I lead the webservice and back-office teams, which were tasked of handling the database and the API and the input of data, respectively.</p>
-                <p>The application is currently being tested in schools throughout the district of Santarém.</p>
-            </div>
-        </div>
-        <h2 id="contact">Get in touch</h2>
 
-        <p>If you want to get in touch with me, feel free to use any of these:</p>
-        
-        <nav id="contacts">
-            <a href="https://www.twitter.com/redroserade" target="_blank"><img src="https://avatars.githubusercontent.com/redroserade?s=120" class="contact"></a>
-            <a href="https://www.linkedin.com/in/afecarvalho" target="_blank"><img src="https://avatars.githubusercontent.com/redroserade?s=120" class="contact"></a>
-            <a href="https://www.github.com/redroserade" target="_blank"><img src="https://avatars.githubusercontent.com/redroserade?s=120" class="contact"></a>
-        </nav>
-        
-        <footer>
-            Made with &lt;3, coffee, and other stuff.
-        </footer>
+            <div class="project">
+                <div class="project-description">
+                    <h4>"Letrinhas"</h4>
+
+                    <p>An Android application for young students to help them improve their reading skills in a fun way. I lead the webservice and back-office teams, which were tasked of handling the database and the API and the input of data, respectively.</p>
+                    <p>The application is currently being tested in schools throughout the district of Santarém.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="">
+            <h2 id="contact">Get in touch</h2>
+
+            <p>If you want to get in touch with me, feel free to use any of these:</p>
+
+            <nav id="contacts">
+                <a href="https://www.twitter.com/redroserade" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/redroserade?s=120" class="contact">
+                </a>
+                <a href="https://www.linkedin.com/in/afecarvalho" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/redroserade?s=120" class="contact">
+                </a>
+                <a href="https://www.github.com/redroserade" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/redroserade?s=120" class="contact">
+                </a>
+            </nav>
+
+            <p class="text-center">Alternatively, shoot me an email: <a href="mailto:afecarvalho@gmail.com" target="_blank">afecarvalho@gmail.com</a>.</p>
+        </section>
     </section>
-    
-    <script src="app.js" type="application/javascript"></script>
+
+    <footer>
+        <span>Made with &hearts;, coffee, and <a href="https://www.github.com/redroserade/redroserade.github.io" target="_blank">other stuff</a>.</span>
+    </footer>
+
+    <script src="js/affix-navbar.js" type="application/javascript"></script>
 </body>
 </html>

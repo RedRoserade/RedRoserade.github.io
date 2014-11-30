@@ -1,0 +1,31 @@
+.main-header {
+    background: url('/img/header-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-shrink: 0;
+
+    color: @light-background;
+    border-bottom: 1px solid @header-border;
+}
+
+.header-image {
+    width: 120px;
+    height: 120px;
+    border: 2px solid @header-border;
+}
+
+#main-content {
+    flex-flow: column;
+    flex-grow: 1;
+    background: blue;
+    align-self: center;
+    flex-shrink: 0;
+    background: #fefefe;
+    border-left: 1px solid @content-border;
+    border-right: 1px solid @content-border;
+}

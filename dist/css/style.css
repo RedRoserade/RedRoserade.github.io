@@ -1,0 +1,129 @@
+#contacts {
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  width: 60px;
+  height: 60px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: #1a1a1a;
+  color: #fefefe;
+  flex-shrink: 0;
+}
+.main-header {
+  background: url('/img/header-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex-shrink: 0;
+  color: #fefefe;
+  border-bottom: 1px solid #fefefe;
+}
+.header-image {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #fefefe;
+}
+#main-content {
+  flex-flow: column;
+  flex-grow: 1;
+  background: blue;
+  align-self: center;
+  flex-shrink: 0;
+  background: #fefefe;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+}
+.img-round {
+  border-radius: 100%;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-width {
+  width: 80%;
+}
+#navbar {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #fefefe;
+  border-bottom: 1px solid #fefefe;
+  background: rgba(26, 26, 26, 0.5);
+}
+.has-affixed-navbar {
+  padding-top: 60px;
+}
+#navbar.affixed {
+  margin-top: 0;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px rgba(26, 26, 26, 0.2);
+}
+#navbar > a {
+  color: #f3f3f3;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0 solid #fefefe;
+  transition: border-bottom-width 0.2s;
+}
+#navbar > a:hover {
+  background: rgba(26, 26, 26, 0.5);
+  border-bottom-width: 2px;
+}
+#navbar > .active {
+  border-bottom-width: 4px;
+}
+.affixed {
+  position: fixed;
+  top: 0;
+  /*IE needs this to stop the element from going offscreen in the X axis.*/
+  left: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-flow: column;
+  background: #ececec;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+a,
+a:visited {
+  color: #ad2200;
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
